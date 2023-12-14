@@ -1,0 +1,1570 @@
+{
+	"info": {
+		"_postman_id": "c9392ff1-6796-4536-bf15-3e6e798d942c",
+		"name": "Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30872160",
+		"_collection_link": "https://speeding-crater-582929.postman.co/workspace/SQLytes-Environment~ef10cf56-672c-460e-9ca9-1b82fda5b67e/collection/30872160-c9392ff1-6796-4536-bf15-3e6e798d942c?action=share&source=collection_link&creator=30872160"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/customer",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Erenh\",\n    \"LastName\": \"Yaeger\",\n    \"Zipcode\": \"09678\",\n    \"Phone\": \"888-999-7766\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/customer",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/<id>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/customer/13",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"customer",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/<id>",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"FirstName\": \"Eren\",\n    \"LastName\": \"Yaeger\",\n    \"Zipcode\": \"09678\",\n    \"Phone\": \"8889997766\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/customer/3",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"customer",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer/<id>",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/customer/16",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"customer",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Incoming",
+			"item": [
+				{
+					"name": "Get All Incoming",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/incoming",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"incoming"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Incoming",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionDate\": \"2023-11-14 12:30:00\",\n  \"partAmount\": 1,\n  \"unitBuyPrice\": 90,\n  \"partID\": 1,\n  \"warehouseID\": 3,\n  \"rackID\": 2,\n  \"supplierID\": 1,\n  \"userID\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/incoming",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"incoming"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Incoming by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/incoming/5",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"incoming",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Incoming",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionDate\": \"2023-11-14 12:30:00\",\n  \"partAmount\": 3,\n  \"unitBuyPrice\": 90,\n  \"partID\": 1,\n  \"warehouseID\": 3,\n  \"rackID\": 2,\n  \"supplierID\": 1,\n  \"userID\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/incoming/5",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"incoming",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Parts",
+			"item": [
+				{
+					"name": "Get All Parts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/part",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"part"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Part By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/part/2",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"part",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Part",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Screwdriver\",\n    \"Color\": \"Silver\",\n    \"Material\": \"Steel\",\n    \"msrp\": 10.99\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/part",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"part"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update part",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Mood Lights\",\n    \"Color\": \"RGB\",\n    \"Material\": \"Glass\",\n    \"msrp\": 29.99,\n    \"ID\": 45\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/part/45",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"part",
+								"45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Part By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/part/46",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"part",
+								"46"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Racks",
+			"item": [
+				{
+					"name": "Get All Racks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/rack",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"rack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Rack By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/rack/1",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"rack",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Rack",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Test\",\n    \"Capacity\": 100\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/rack",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"rack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Rack",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Arts and Craft Supplies Rack\",\n    \"Capacity\": 100,\n    \"id\": 81\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/rack/81",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"rack",
+								"81"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Rack",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/rack/52",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"rack",
+								"52"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Suppliers",
+			"item": [
+				{
+					"name": "Get All Suppliers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/supplier",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"supplier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Supplier By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/supplier/1",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"supplier",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Supplier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Center Depot\",\n    \"country\": \"United States\",\n    \"city\": \"Miami\",\n    \"street\": \"Coral Way\",\n    \"zipcode\": \"33101\",\n    \"phone\": \"786-993-1034\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/supplier",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"supplier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Supplier",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Los Suppliers Con todo\",\n    \"country\": \"USA\",\n    \"city\": \"Bayamon\",\n    \"street\": \"Avenida del Sol Radiante\",\n    \"zipcode\": \"00953\",\n    \"phone\": \"939-132-5678\",\n    \"id\": 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/supplier/6",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"supplier",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Supplier",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/supplier/7",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"supplier",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Outgoing",
+			"item": [
+				{
+					"name": "Get All Outgoing Transactions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/outgoing",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Outgoing Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionDate\": \"2023-11-14 12:30:00\",\n  \"partAmount\": 5,\n  \"unitSalePrice\": 420,\n  \"partID\": 31,\n  \"customerID\": 2,\n  \"warehouseID\": 9,\n  \"userID\": 7\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/outgoing",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Outgoing by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/outgoing/1",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"outgoing",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Outgoing",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"transactionDate\": \"2023-11-14 12:30:00\",\n  \"partAmount\": 12,\n  \"unitSalePrice\": 9990,\n  \"partID\": 1,\n  \"customerID\": 2,\n  \"warehouseID\": 3,\n  \"userID\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/outgoing/10",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"outgoing",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ufname\":\"Moises\",\n    \"ulname\":\"Robles\",\n    \"username\":\"moises.robles\",\n    \"uemail\":\"junk@email.com\",\n    \"upassword\":\"1234\",\n    \"wid\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/user",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ufname\":\"Sofía\",\n    \"ulname\":\"Martinez\",\n    \"username\":\"sofiam\",\n    \"uemail\":\"sofia@upr.edu\",\n    \"upassword\":\"tH1s1sW4Yb3tT3r!\",\n    \"wid\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/user/1",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/user",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/user/14",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"user",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/user/15",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"user",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transfers",
+			"item": [
+				{
+					"name": "Get Transfer by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/exchange/11",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"exchange",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Transfers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/exchange",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"exchange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactionDate\":\"2023-11-18\",\n    \"partAmount\" : 2,\n    \"toWarehouse\": 9,\n    \"toRack\": 70,\n    \"userRequester\": 7,\n    \"partID\": 30,\n    \"warehouseID\":11,\n    \"userID\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/exchange",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"exchange"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"transactionDate\":\"2001-02-22\",\n    \"partAmount\" : 2,\n    \"toWarehouse\": 9,\n    \"toRack\": 71,\n    \"userRequester\": 7,\n    \"partID\": 43,\n    \"warehouseID\":11,\n    \"userID\": 10\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/exchange/11",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"exchange",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "transaction",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/transaction",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transaction/<id>",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/transaction/8",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"transaction",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Warehouse",
+			"item": [
+				{
+					"name": "Get Warehouses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Warehouse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"wname\":\"Ken's Dojo House\",\n    \"wcountry\": \"Barbieland\",\n    \"wregion\":\"Unknown\",\n    \"wcity\":\"Somewhere\",\n    \"wstreet\":\"1234 ABC St.\",\n    \"wzipcode\": \"11111111\",\n    \"wbudget\":100000.00 \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Warehouse By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/10",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Warehouse",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"wname\":\"Barbie House\",\n    \"wcountry\": \"USA\",\n    \"wregion\":\"Florida\",\n    \"wcity\":\"Somewhere\",\n    \"wstreet\":\"1234 ABC St.\",\n    \"wzipcode\": \"11111111\",\n    \"wbudget\":100000.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/13",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Warehouse",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/14",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Warehouses with Most Racks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/most/rack",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"most",
+								"rack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Incoming",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/most/incoming",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"most",
+								"incoming"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Exchanges",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/most/deliver",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"most",
+								"deliver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top User Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/most/transactions",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"most",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Least Outgoing Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/least/outgoing",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"least",
+								"outgoing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top WCities Transactions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/most/city",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"most",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Yearly Profit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/11/profit",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"11",
+								"profit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Lowest Stock",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/11/rack/lowstock",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"11",
+								"rack",
+								"lowstock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bottom Rack Material",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/11/rack/material",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"11",
+								"rack",
+								"material"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Expensive Racks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/11/rack/expensive",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"11",
+								"rack",
+								"expensive"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Warehouse Suppliers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/11/transaction/suppliers",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"11",
+								"transaction",
+								"suppliers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top Lowest Trans. Costs",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/11/transaction/leastcost",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"11",
+								"transaction",
+								"leastcost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top User Exchanges",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://sqlytes-inventory-app-c6c81e457261.herokuapp.com/sqlytes/warehouse/11/users/receivesmost",
+							"protocol": "https",
+							"host": [
+								"sqlytes-inventory-app-c6c81e457261",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"sqlytes",
+								"warehouse",
+								"11",
+								"users",
+								"receivesmost"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+**/venv
+**/.venv
+**/.idea
+.DS_Store
+*.pyc
+*~
+*.swp
+.python-version
